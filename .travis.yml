@@ -1,0 +1,8 @@
+---
+jobs:
+  include:
+    - stage: test
+      services:
+        - docker
+      script:
+        - docker build . -t s6-base
