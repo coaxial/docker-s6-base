@@ -6,3 +6,7 @@ jobs:
         - docker
       script:
         - docker build . -t s6-base
+
+notifications:
+  webhooks:
+    - https://hooks.microbadger.com/images/coaxial/s6-base/mzQb10gOHwohqKGupbGIKQ1S-Kc=
